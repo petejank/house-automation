@@ -22,10 +22,10 @@ function Slider({value, min, max, onChange}) {
 
   // Workaround for https://github.com/material-components/material-components-web/issues/1017
   store.subscribe(({sidebar: {open}}) => {
-    if (open !== currentDrawerState) {
-      currentDrawerState = open
-      setTimeout(() => slider.layout(), SLIDER_WORKAROUND_TIMEOUT)
-    }
+    if (open === currentDrawerState) return
+
+    currentDrawerState = open
+    setTimeout(() => slider.layout(), SLIDER_WORKAROUND_TIMEOUT)
   })
 
   return component
