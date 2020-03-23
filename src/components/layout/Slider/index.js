@@ -17,7 +17,7 @@ function Slider({value, min, max, onChange}) {
 
   afterRender(() => {
     slider = new MDCSlider(component.querySelector(SLIDER_SELECTOR))
-    slider.listen(SLIDER_CHANGE_EVENT, (ev) => onChange(slider.value))
+    slider.listen(SLIDER_CHANGE_EVENT, () => onChange(slider.value))
   })
 
   // Workaround for https://github.com/material-components/material-components-web/issues/1017
