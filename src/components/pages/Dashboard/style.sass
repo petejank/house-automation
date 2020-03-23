@@ -4,11 +4,10 @@
 @use 'assets/styles/functions/sizing'
 
 .home-dashboard
-  display: flex
-  flex-direction: column
+  display: grid
+  grid-gap: sizing.size(2)
+  grid-template-columns: 1fr
   width: 100%
 
   +screens.sm-res-min
-    display: grid
-    grid-gap: sizing.size(2)
     grid-template-columns: 1fr 1fr 1fr 1fr
