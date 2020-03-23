@@ -6,7 +6,7 @@ import componentToString from 'components/utils/componentToString'
 import createComponent from 'components/utils/createComponent'
 import * as store from 'store'
 
-const SLIDER_WORKAROUND_TIMEOUT = 250
+const SLIDER_WORKAROUND_TIMEOUT = 350
 const SLIDER_SELECTOR = '.mdc-slider'
 const SLIDER_CHANGE_EVENT = 'MDCSlider:change'
 
