@@ -4,7 +4,7 @@
     "name": "Entrance",
     "color": "#81f5ff",
     "temperature": 20,
-    "temperatureMin": -10,
+    "temperatureMin": 10,
     "temperatureMax": 30,
     "lights": true,
     "curtains": true
@@ -14,7 +14,7 @@
     "name": "Hallway",
     "color": "#30475e",
     "temperature": 20,
-    "temperatureMin": -10,
+    "temperatureMin": 10,
     "temperatureMax": 30,
     "lights": true,
     "curtains": true
@@ -24,7 +24,7 @@
     "name": "Living room",
     "color": "#d45079",
     "temperature": 20,
-    "temperatureMin": -10,
+    "temperatureMin": 10,
     "temperatureMax": 30,
     "lights": true,
     "curtains": true
@@ -34,7 +34,7 @@
     "name": "Kitchen",
     "color": "#75b79e",
     "temperature": 20,
-    "temperatureMin": -10,
+    "temperatureMin": 10,
     "temperatureMax": 30,
     "lights": true,
     "curtains": true
@@ -44,7 +44,7 @@
     "name": "Guest room",
     "color": "#ea9085",
     "temperature": 20,
-    "temperatureMin": -10,
+    "temperatureMin": 10,
     "temperatureMax": 30,
     "lights": true,
     "curtains": true
@@ -61,7 +61,7 @@
     "color": "#ddb6c6",
     "temperature": -10,
     "temperatureMin": -10,
-    "temperatureMax": 30
+    "temperatureMax": 10
   },
   {
     "id": 7,
