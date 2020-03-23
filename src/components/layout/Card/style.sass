@@ -1,0 +1,18 @@
+@use 'assets/styles/colors'
+@use 'assets/styles/functions/sizing'
+
+.home-card
+  height: 100%
+  margin-bottom: sizing.size(2)
+
+  &--no-margin-bottom
+    margin-bottom: 0
+
+  &__content
+    border-top-width: 2px
+    border-top-style: solid
+    background: colors.$white
+    padding: sizing.size(1)
+
+    &--no-padding-bottom
+      padding-bottom: 0

@@ -1,0 +1,13 @@
+@use '@material/top-app-bar/variables' as mdc-variables
+
+@use 'assets/styles/functions/sizing'
+@use 'assets/styles/mixins/screens'
+@use 'assets/styles/variables'
+
+.home-container
+  margin-top: mdc-variables.$mobile-row-height
+  padding: sizing.size(4)
+  width: 100%
+
+  +screens.sm-res-min
+    margin: mdc-variables.$row-height 0 0 variables.$sidebar-width

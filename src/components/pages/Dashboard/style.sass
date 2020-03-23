@@ -1,0 +1,14 @@
+@use '@material/switch/mdc-switch'
+
+@use 'assets/styles/mixins/screens'
+@use 'assets/styles/functions/sizing'
+
+.home-dashboard
+  display: flex
+  flex-direction: column
+  width: 100%
+
+  +screens.sm-res-min
+    display: grid
+    grid-gap: sizing.size(2)
+    grid-template-columns: 1fr 1fr 1fr 1fr

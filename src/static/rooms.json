@@ -1,0 +1,75 @@
+[
+  {
+    "id": 0,
+    "name": "Entrance",
+    "color": "#81f5ff",
+    "temperature": 20,
+    "temperatureMin": 10,
+    "temperatureMax": 30,
+    "lights": true,
+    "curtains": true
+  },
+  {
+    "id": 1,
+    "name": "Hallway",
+    "color": "#30475e",
+    "temperature": 20,
+    "temperatureMin": 10,
+    "temperatureMax": 30,
+    "lights": true,
+    "curtains": true
+  },
+  {
+    "id": 2,
+    "name": "Living room",
+    "color": "#d45079",
+    "temperature": 20,
+    "temperatureMin": 10,
+    "temperatureMax": 30,
+    "lights": true,
+    "curtains": true
+  },
+  {
+    "id": 3,
+    "name": "Kitchen",
+    "color": "#75b79e",
+    "temperature": 20,
+    "temperatureMin": 10,
+    "temperatureMax": 30,
+    "lights": true,
+    "curtains": true
+  },
+  {
+    "id": 4,
+    "name": "Guest room",
+    "color": "#ea9085",
+    "temperature": 20,
+    "temperatureMin": 10,
+    "temperatureMax": 30,
+    "lights": true,
+    "curtains": true
+  },
+  {
+    "id": 5,
+    "name": "Attic",
+    "color": "#bbded6",
+    "lights": true
+  },
+  {
+    "id": 6,
+    "name": "Freezer",
+    "color": "#ddb6c6",
+    "temperature": -10,
+    "temperatureMin": -20,
+    "temperatureMax": 0
+  },
+  {
+    "id": 7,
+    "name": "Cellar",
+    "color": "#f2a6a6",
+    "temperature": 10,
+    "temperatureMin": -10,
+    "temperatureMax": 25,
+    "lights": true
+  }
+]
