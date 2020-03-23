@@ -1,3 +1,4 @@
+import classnames from 'classnames'
 import {MDCDrawer} from '@material/drawer'
 
 import Controls from './Controls'
@@ -28,11 +29,9 @@ function LayoutSideBar() {
     const hasModalClass = component.classList.contains(DRAWER_MODAL_CLASS)
 
     if (isMobile()) {
-      if (!hasModalClass) {
-        component.classList.add(DRAWER_MODAL_CLASS)
-        if (!drawer) drawer = MDCDrawer.attachTo(component)
-        store.dispatch(sidebarActions.close())
-      }
+      if (!hasModalClass) component.classList.add(DRAWER_MODAL_CLASS)
+      if (!drawer) drawer = MDCDrawer.attachTo(component)
+      store.dispatch(sidebarActions.close())
 
       return
     }
@@ -43,8 +42,12 @@ function LayoutSideBar() {
   }
 
   function render() {
+    const wrapperClass = classnames('mdc-drawer home-dashboard-layout-sidebar', {
+      [DRAWER_MODAL_CLASS]: isMobile()
+    })
+
     return createComponent(`
-      <aside class="mdc-drawer home-dashboard-layout-sidebar">
+      <aside class="${wrapperClass}">
         <header class="mdc-drawer__header">
           <h1 class="mdc-drawer__title">Controls</h1>
           <p class="mdc-drawer__subtitle">Arranged per room</p>
