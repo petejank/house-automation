@@ -10,7 +10,7 @@ function LayoutSideBarControlsRoomTemperature({id, value, min, max}) {
   return Item({
     padded: true,
     children: [
-      Typography({text: LABEL, tag: 'h3'}),
+      Typography({text: LABEL, tag: 'h3', color: 'white'}),
       Slider({min, max, value, onChange})
     ]
   })

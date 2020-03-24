@@ -2,6 +2,7 @@ import classnames from 'classnames'
 import {MDCDrawer} from '@material/drawer'
 
 import Controls from './Controls'
+import HeadingText from './HeadingText'
 import afterRender from 'components/utils/afterRender'
 import addResizeListener from 'utils/addResizeListener'
 import isMobile from 'utils/isMobile'
@@ -42,15 +43,13 @@ function LayoutSideBar() {
   }
 
   function render() {
-    const wrapperClass = classnames('mdc-drawer home-dashboard-layout-sidebar', {
-      [DRAWER_MODAL_CLASS]: isMobile()
-    })
+    const wrapperClass = classnames('mdc-drawer home-dashboard-layout-sidebar', {[DRAWER_MODAL_CLASS]: isMobile()})
 
     return createComponent(`
       <aside class="${wrapperClass}">
         <header class="mdc-drawer__header">
-          <h1 class="mdc-drawer__title">Controls</h1>
-          <p class="mdc-drawer__subtitle">Arranged per room</p>
+          <h1 class="mdc-drawer__title">${HeadingText({text: 'Controls'})}</h1>
+          <p class="mdc-drawer__subtitle">${HeadingText({text: 'Arranged per room'})}</p>
         </header>
       </aside>
     `, Controls())

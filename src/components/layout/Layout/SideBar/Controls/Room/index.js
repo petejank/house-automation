@@ -10,7 +10,7 @@ const ROOM_CARD_TAG = 'li'
 
 function LayoutSideBarControlsRoom({id, name, color, temperature, temperatureMin, temperatureMax, lights, curtains}) {
   const children = [
-    Typography({text: name, tag: 'h2', weight: 'bold', type: 'body1'})
+    Typography({text: name, tag: 'h2', weight: 'bold', type: 'body1', color: 'white'})
   ]
 
   if (!isUndefined(lights)) children.push(Lights({id, checked: lights}))
@@ -21,8 +21,10 @@ function LayoutSideBarControlsRoom({id, name, color, temperature, temperatureMin
 
   return Card({
     color,
+    noBorderTop: true,
+    elevation: 0,
     tag: ROOM_CARD_TAG,
-    disablePaddingBottom: true,
+    noPaddingBottom: true,
     children
   })
 }

@@ -1,0 +1,8 @@
+@use 'assets/styles/colors'
+@use '../style' as controls
+
+.home-layout-sidebar-controls-separator
+  margin-left: -#{controls.$horizontal-padding}
+  background: colors.$gray-light
+  height: 1px
+  width: calc(100% + #{controls.$horizontal-padding * 2})

@@ -2,10 +2,13 @@
 @use '@material/list/mdc-list'
 
 @use 'assets/styles/variables'
+@use 'assets/styles/colors'
 
 .home-dashboard-layout-sidebar
-  height: auto
+  background: colors.$gray
   position: fixed
+  height: auto
+  min-height: 100vh
   max-height: 100vh
   overflow-y: auto
   white-space: nowrap

@@ -1,16 +1,10 @@
-import Switch from 'components/layout/Switch'
-import Item from '../Item'
-import * as store from 'store'
-import * as roomsActions from 'store/rooms/actions'
+import SwitchItem from '../SwitchItem'
 
 const LABEL = 'Curtains'
+const ROOM_PROP = 'curtains'
 
 function LayoutSideBarControlsRoomCurtains({id, checked}) {
-  return Item({children: Switch({label: LABEL, checked, onChange})})
-
-  function onChange(curtains) {
-    store.dispatch(roomsActions.update(id, {curtains}))
-  }
+  return SwitchItem({id, checked, label: LABEL, prop: ROOM_PROP})
 }
 
 export default LayoutSideBarControlsRoomCurtains

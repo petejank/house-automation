@@ -16,7 +16,7 @@ function DashboardRoom({id, name, color, temperature, lights, curtains}) {
   if (!isUndefined(curtains)) children.push(Curtains({id, curtains}))
   if (!isUndefined(temperature)) children.push(Temperature({id, value: temperature.toString()}))
 
-  return createComponent('<div class="home-dashboard-room" />', Card({disableMarginBottom: true, color, children}))
+  return createComponent('<div class="home-dashboard-room" />', Card({noMargin: true, color, children}))
 }
 
 export default DashboardRoom

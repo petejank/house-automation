@@ -2,8 +2,6 @@ import classnames from 'classnames'
 import {MDCSwitch} from '@material/switch'
 
 import afterRender from 'components/utils/afterRender'
-import Typography from 'components/layout/Typography'
-import componentToString from 'components/utils/componentToString'
 import createComponent from 'components/utils/createComponent'
 
 const SWITCH_SELECTOR = '.mdc-switch'
@@ -28,7 +26,7 @@ function Switch({label, checked, onChange, ariaLevel = 3}) {
     return `
       <div class="home-switch" role="heading" aria-level="${ariaLevel}">
         <label for="${inputId}">
-          ${componentToString(Typography({text: label}))}
+          ${label}
         </label>
         <div class="${switchElmClass}">
           <div class="mdc-switch__track"></div>
