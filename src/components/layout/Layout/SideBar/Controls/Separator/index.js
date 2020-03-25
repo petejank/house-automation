@@ -1,6 +1,6 @@
 import createComponent from 'components/utils/createComponent'
 
-const LayoutSideBarControlsSeparator = () => {
+function LayoutSideBarControlsSeparator() {
   return createComponent('<li class="home-layout-sidebar-controls-separator" />')
 }
 

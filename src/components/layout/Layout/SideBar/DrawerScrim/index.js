@@ -1,6 +1,6 @@
 import createComponent from 'components/utils/createComponent'
 
-const LayoutDrawerScrim = () => {
+function LayoutDrawerScrim() {
   return createComponent('<div class="mdc-drawer-scrim home-scrim" />')
 }
 

@@ -2,7 +2,7 @@ import classnames from 'classnames'
 
 import createComponent from 'components/utils/createComponent'
 
-const IconButton = ({className, icon, onClick}) => {
+function IconButton({className, icon, onClick}) {
   const component = render()
   component.addEventListener('click', onClick)
 

@@ -1,7 +1,7 @@
 import Typography from 'components/layout/Typography'
 import componentToString from 'components/utils/componentToString'
 
-const LayoutSideBarHeadingText = ({text}) => {
+function LayoutSideBarHeadingText({text}) {
   return componentToString(Typography({color: 'white', text, type: 'inherit'}))
 }
 
