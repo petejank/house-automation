@@ -34,6 +34,7 @@ function Switch({label, checked, onChange, ariaLevel = 3}) {
             <div class="mdc-switch__thumb"></div>
             <input
               id="${inputId}"
+              autocomplete="off"
               type="checkbox"
               class="mdc-switch__native-control"
               role="switch"
