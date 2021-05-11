@@ -50,7 +50,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "material-components-web": "^5.1.0",
     "material-icons": "^0.3.1",
     "reset.css": "^2.0.2"
